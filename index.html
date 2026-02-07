@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rabiess Surprise 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Emoji Background -->
+<div class="emoji-bg">
+    <div class="emoji" style="left:10%; animation-duration:12s;">❤️</div>
+    <div class="emoji" style="left:25%; animation-duration:8s;">💖</div>
+    <div class="emoji" style="left:40%; animation-duration:15s;">👽</div>
+    <div class="emoji" style="left:60%; animation-duration:10s;">🌟</div>
+    <div class="emoji" style="left:75%; animation-duration:13s;">💌</div>
+    <div class="emoji" style="left:90%; animation-duration:9s;">🥰</div>
+</div>
+
+<h1>Hey Rabiess! 💕</h1>
+<p>Click a gift to unwrap your surprise 🎁</p>
+
+<!-- Music -->
+<audio id="song" src="song/yourSong.mp3" loop></audio>
+<button onclick="playPauseSong()">Play/Pause Music 🎵</button>
+
+<!-- Gift Wrap Videos -->
+<div class="gifts-container">
+    <div class="gift" onclick="openVideo('video1')">🎁</div>
+    <div class="gift" onclick="openVideo('video2')">🎁</div>
+    <div class="gift" onclick="openVideo('video3')">🎁</div>
+    <div class="gift" onclick="openVideo('video4')">🎁</div>
+</div>
+
+<!-- Video Sections -->
+<div id="video1" class="video-wrap" style="display:none;">
+    <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="video2" class="video-wrap" style="display:none;">
+    <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="video3" class="video-wrap" style="display:none;">
+    <video controls>
+        <source src="videos/video3.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="video4" class="video-wrap" style="display:none;">
+    <video controls>
+        <source src="videos/video4.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Final Photo Gift Wrap -->
+<h2>Last Surprise 💖</h2>
+<div id="giftWrap" class="gift-wrap">
+    <img id="finalPhoto" src="photo/kiss.jpg" alt="Surprise Photo">
+    <button onclick="openPhotoGift()">Unwrap Photo 🎁</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
